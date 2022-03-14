@@ -7,12 +7,18 @@
 body {
   background-color: rgb(247, 240, 240);
   overflow-x: hidden;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 80vw;
 }
 header {
   display: flex;
@@ -40,14 +46,16 @@ form {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 350px;
+  width: 80vw;
+  max-width: 350vw;
   background-color: white;
   padding: 25px;
   border-radius: 10px;
   margin-bottom: 20px;
 }
 input {
-  width: 320px;
+  width: 80vw;
+  max-width: 320px;
   padding: 10px;
   margin-bottom: 15px;
   border: 1px solid lightgray;
@@ -55,7 +63,8 @@ input {
   font-size: 20px;
 }
 .login {
-  width: 340px;
+  width: 85vw;
+  max-width: 340px;
   background-color: blue;
   font-size: 20px;
   border: none;
@@ -83,6 +92,9 @@ hr {
   border-radius: 4px;
   font-size: 17px;
 }
+main p{
+ text-align: center;
+}
 main span {
   font-weight: 700;
 }
@@ -101,6 +113,9 @@ main span:hover {
     flex-direction: row;
     justify-content: space-between;
     width: 70vw;
+  }
+  form {
+    width: 350px;
   }
   header {
     justify-content: center;
